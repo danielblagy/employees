@@ -6,7 +6,7 @@ ADD . /app
 
 WORKDIR /app
 
-RUN go build -o main .
+RUN go build -o main ./cmd/server/main.go
 
 EXPOSE 5000
 
